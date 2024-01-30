@@ -5,7 +5,8 @@ class Solution {
                                  .replace("i", "")
                                  .replace("o", "")
                                  .replace("u", "");
-        
+//         String answer = "";
+//         answer = my_string.replaceAll("[aeiou]", "");
         return answer;
     }
 }
