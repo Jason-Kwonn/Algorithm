@@ -17,5 +17,11 @@ class Solution {
         answer = new String(temp);
         
         return answer;
+        
+        
+        // 더 짧은 코드
+        // char[] c = my_string.toLowerCase().toCharArray();
+        // Arrays.sort(c);
+        // return new String(c);
     }
 }
