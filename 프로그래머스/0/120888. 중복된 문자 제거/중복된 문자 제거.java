@@ -1,4 +1,6 @@
 import java.util.LinkedHashSet;
+// import java.util.*;
+// import java.util.stream.Collectors;
 
 class Solution {
     public String solution(String my_string) {
@@ -21,5 +23,11 @@ class Solution {
         
         // String 타입으로 변환한다.
         return answer.toString();
+        
+        // stream 풀이
+        // return Arrays.stream(myString.split(""))
+        //     .distinct()
+        //     .collect(Collectors.joining());
+        
     }
 }
