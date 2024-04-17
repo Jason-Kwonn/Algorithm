@@ -10,6 +10,10 @@ class Solution {
             answer[i] = num_list[i];
         }
         
+        // 다른 풀이
+        // Arrays.sort(num_list);
+        // return Arrays.copyOfRange(num_list, 0, 5);
+        
         return answer;
     }
 }
