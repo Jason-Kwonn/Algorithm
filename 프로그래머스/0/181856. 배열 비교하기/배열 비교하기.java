@@ -1,28 +1,11 @@
+import java.util.stream.IntStream;
+
 class Solution {
     public int solution(int[] arr1, int[] arr2) {
-        int answer = 0;
+        int answer = Integer.compare(arr1.length, arr2.length);
         
-        if(arr1.length > arr2.length){
-            answer = 1;
-        } else if (arr1.length < arr2.length){
-            answer = -1;
-        } else {
-            int num1 = 0;
-            int num2 = 0;
-            for(int num : arr1){
-                num1 += num;
-            }
-            for(int num : arr2){
-                num2 += num;
-            }
-            
-            if(num1 > num2){
-                answer = 1;
-            } else if(num1 < num2) {
-                answer = -1;
-            } else {
-                answer = 0;
-            }
+        if(answer == 0){
+            answer = Integer.compare(IntStream.of(arr1).sum(), IntStream.of(arr2).sum());
         }
         
         return answer;
