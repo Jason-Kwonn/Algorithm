@@ -2,7 +2,7 @@ class Solution {
     public String solution(String rny_string) {
         String answer = "";
         
-        answer = rny_string.replace("m", "rn");
+        answer = rny_string.replaceAll("m", "rn");
         
         return answer;
     }
